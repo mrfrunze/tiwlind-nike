@@ -313,7 +313,7 @@ export const socialMedia = [
     </nav>
 </header>
 ```
-# First step 
+# component Hero
 
 ```bash
 
