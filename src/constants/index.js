@@ -24,9 +24,9 @@ export const shoes = [
 ];
 
 export const statistics = [
-    { value: '1k+', label: 'Brands' },
-    { value: '500+', label: 'Shops' },
-    { value: '250k+', label: 'Customers' },
+    { id: 1, value: '1k+', label: 'Brands' },
+    { id: 2, value: '500+', label: 'Shops' },
+    { id: 3, value: '250k+', label: 'Customers' },
 ];
 
 export const products = [
@@ -54,16 +54,19 @@ export const products = [
 
 export const services = [
     {
+        id: 1,
         imgURL: truckFast,
         label: "Free shipping",
         subtext: "Enjoy seamless shopping with our complimentary shipping service."
     },
     {
+        id: 2,
         imgURL: shieldTick,
         label: "Secure Payment",
         subtext: "Experience worry-free transactions with our secure payment options."
     },
     {
+        id: 3,
         imgURL: support,
         label: "Love to help you",
         subtext: "Our dedicated team is here to assist you every step of the way."
