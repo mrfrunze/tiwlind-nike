@@ -21,16 +21,19 @@ const Hero = () => {
         <Button label="Shop now" iconUrl={arrowRight}/>
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {
-            statistics.map((star) => (
-              <div key={star.id}>
-                <p className="text-4xl font-palanquin font-bold">
-                  {star.value}
-                </p>
-                <p className="leading-7 font-montserrat text-slate-gray">
-                  {star.label}
-                </p>
-              </div>
-            ))
+            statistics.map((star) => {
+              const {id, label, value} = star
+              return (
+                <div key={id}>
+                  <p className="text-4xl font-palanquin font-bold">
+                    {value}
+                  </p>
+                  <p className="leading-7 font-montserrat text-slate-gray">
+                    {label}
+                  </p>
+                </div>
+              )
+            })
           }
         </div>
       </div>
@@ -38,8 +41,8 @@ const Hero = () => {
         <img src={bigShoeImg} alt="bigShoe" width={610} height={500} className="object-contain relative z-10" />
         <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
           {
-            shoes.map((shoe) => (
-              <div key={shoe}>
+            shoes.map((shoe, idx) => (
+              <div key={idx}>
                 <ShoeCard 
                   imgUrl = {shoe}
                   bigShoeImg={bigShoeImg}
