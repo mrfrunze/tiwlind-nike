@@ -3,8 +3,9 @@ import { Nav } from "./components/index"
 
 const App = () => {
   return (
+    <>
+    <Nav/>
     <main className='relative'>
-      <Nav/>
      <section className='xl:padding-l wide:padding-r padding-b'>
       <Hero/>
      </section>
@@ -26,10 +27,9 @@ const App = () => {
      <section className="padding-x sm:py-32 py-16 w-full">
       <Subscribe/>
      </section>
-     <section className="padding-x padding-t pb-8 bg-black">
-      <Footer/>
-     </section>
     </main>
+      <Footer/>
+    </>
   )
 }
 
